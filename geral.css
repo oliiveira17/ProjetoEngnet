@@ -1,0 +1,34 @@
+
+h1{
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+}
+h2{
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+}
+body {
+    padding: 25px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 25px;
+  }
+  .Escuro {
+    background-color: black;
+    color: white;
+  }
+  .Claro {
+    background-color: whitesmoke;
+    color: black;
+  }
+a{
+    text-decoration: none;
+    color:blue;
+}
+a:hover{
+    color:brown;
+}
+#cercado{
+    background-color: antiquewhite;
+    border-radius: 4px;
+}

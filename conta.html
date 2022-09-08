@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maurício Oliveira</title>
+</head>
+<style>
+h1{
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+}
+h2{
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+}
+body {
+    padding: 25px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 25px;
+  }
+  .Escuro {
+    background-color: black;
+    color: white;
+  }
+  .Claro {
+    background-color: whitesmoke;
+    color: black;
+  }
+a{
+    text-decoration: none;
+    color:blue;
+}
+a:hover{
+    color:brown;
+}
+#cercado{
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
+    </style>
+<body id="escolhe-cor" style="text-align:center;" bgcolor="white">
+    <h2 class="meu-nome" id="nome" style="color:crimson">Um pouquinho sobre mim :)</h2>
+    <button onclick="nomeMauricio()" type="button" id="nome-mauricio">Qual o seu nome?</button>
+    <button onclick="Escuro()">Modo Escuro</button>
+
+    <button onclick="Claro()">Modo Claro</button>
+    <p class="meu-nome" id="oliveira" style="color:blue"></p>
+    <p style="color:rgb(158, 92, 105)">Meu nome é <b>Maurício Oliveira</b>, gosto muito de jogar futebol, ver filmes e jogar conversa fora com meus amigos.</p></font>
+    <p style="color:rgb(158, 92, 105)">Não tenho pets :( , mas queria ter um dog.</p></font>
+    <img src="/Users/User/Downloads/Oliveira.jpeg" height="250" weight="250">
+    <p style="color:rgb(158, 92, 105)">Entrei na Engnet com a intenção de crescer e aprender muito com a empresa, ainda quero fazer muito projetos pela empresa.</p>
+    <p style="color:rgb(158, 92, 105)">Tenho interesse na diretoria de Projetos e na de AdmFin</style></p>
+    <p style="color:rgb(158, 92, 105)">Estou cursando Engenharia de Redes e mesmo sendo calouro sou apaixonado na área</p>
+    <p style="color:rgb(158, 92, 105)"> Uma das músicas que mais estou viciado ultimamente é essa:</p>
+    <a href="https://www.youtube.com/watch?v=Qo4dxCYjfQA">Acende a Vela - Felipe Ret</a>
+    <p style="color:brown">E isso foi um pouquinho sobre mim</p>
+    
+    <button onclick="Escuro()">Modo Escuro</button>
+
+    <button onclick="Claro()">Modo Claro</button>
+    <script>
+        var h2Nome = document.getElementById("oliveira");
+        function nomeMauricio(){
+            let nome = prompt("Qual é o seu nome?");
+        h2Nome.innerText = "Olá " + nome + ", é um prazer ver você!";
+        };
+        function Escuro() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "Escuro";
+        content.innerText = "modo escuro on";
+      }
+      function Claro() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "Claro";
+        content.innerText = "modo claro OFF";
+      }
+    </script>
+</body>
+</html>
