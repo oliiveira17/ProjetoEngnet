@@ -48,7 +48,7 @@ a:hover{
     <button onclick="Escuro()">Modo Escuro</button>
 
     <button onclick="Claro()">Modo Claro</button>
-    <p class="meu-nome" id="oliveira" style="color:blue"></p>
+    <p class="meu-nome" id="oliveira" style="color:rgb(9, 24, 11)0, 153, 255)"></p>
     <p style="color:rgb(158, 92, 105)">Meu nome é <b>Maurício Oliveira</b>, gosto muito de jogar futebol, ver filmes e jogar conversa fora com meus amigos.</p></font>
     <p style="color:rgb(158, 92, 105)">Não tenho pets :( , mas queria ter um dog.</p></font>
     <img src="/xampp/htdocs/mauricio2/ProjetoEngnet/Oliveira.jpeg" height="250" weight="250">
@@ -56,11 +56,13 @@ a:hover{
     <p style="color:rgb(158, 92, 105)">Tenho interesse na diretoria de Projetos e na de AdmFin</style></p>
     <p style="color:rgb(158, 92, 105)">Estou cursando Engenharia de Redes e mesmo sendo calouro sou apaixonado na área</p>
     <p style="color:rgb(158, 92, 105)"> Uma das músicas que mais estou viciado ultimamente é essa:</p>
-    <a href="https://www.youtube.com/watch?v=Qo4dxCYjfQA">Acende a Vela - Felipe Ret</a>
-    <p style="color:brown">E isso foi um pouquinho sobre mim</p>
+    <a href="https://www.youtube.com/watch?v=Qo4dxCYjfQA">Acende a Vela - Felipe Ret</a><br>
+    <button onclick="sorveteFavorito()" type="button" id="sorvete">Qual o seu sorvete favorito?</button>
+    <p class="meu-sorvete" id="sorvete" style="color:rgb(9, 24, 11)0, 153, 255)"></p>
     
+    <p style="color:brown">E isso foi um pouquinho sobre mim</p>    
+    <br><br><br>
     <button onclick="Escuro()">Modo Escuro</button>
-
     <button onclick="Claro()">Modo Claro</button>
     <script>
         var h2Nome = document.getElementById("oliveira");
@@ -80,6 +82,11 @@ a:hover{
         element.className = "Claro";
         content.innerText = "modo claro OFF";
       }
+      var h2Sorvete = document.getElementById("sorvete");
+        function sorveteFavorito(){
+            let sorvete = prompt("Qual é o seu sorvete favorito?");
+        h2Sorvete.innerText = "Hmmm," + sorvete + " é bom, mas para mim chocolate com menta é melhor!";
+        };
     </script>
 </body>
 </html>
